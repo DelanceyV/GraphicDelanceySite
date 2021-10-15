@@ -1,0 +1,475 @@
+.main {
+  height: 100%;
+  background-color: black;
+  background-image: url(./images/GDBGplain.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center center;
+  font-family: americane-condensed, sans-serif;
+  color: whitesmoke;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.center {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.jumbotron {
+  background-color: rgba(0, 0, 0, 0.50);
+  background-image: linear-gradient(to right, rgba(243, 143, 187, 0.1), rgba(228, 164, 85, 0.1), rgba(255, 246, 139, 0.1), rgba(130, 182, 106, 0.1), rgba(121, 116, 169, 0.1));
+  margin: 0;
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+  padding-top: .5rem;
+  text-align: center;
+}
+
+.navbar {
+  justify-content: right;
+  text-align: right;
+  margin-left: 1rem;
+}
+
+.nav-link {
+  margin-right: 1.2rem;
+}
+
+.title {
+  font-size: xx-large;
+}
+
+.rainbow {
+  color: white;
+  background: -webkit-linear-gradient(left, rgba(243, 143, 187), rgba(228, 164, 85), rgba(255, 246, 139), rgba(130, 182, 106), rgba(121, 116, 169));
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-decoration: none;
+}
+
+.btn {
+  /* button sizes other than sm and lg need to be on the page */
+  margin: 1rem;
+  padding: 1rem;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  background: -webkit-linear-gradient(left, rgb(133, 48, 85), rgba(228, 164, 85), rgba(255, 246, 139), rgba(130, 182, 106), rgba(121, 116, 169));
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-color: transparent;
+  border: .01em solid rgba(255, 255, 255, 0.171);
+  border-radius: 10px;
+  transition: color 0.15s ease, border-color 0.15s ease;
+}
+
+.home-btn {
+  margin-left: -4px;
+}
+
+.btn:hover {
+  opacity: .5;
+}
+
+.gameGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  justify-items: center;
+  align-items: stretch;
+  gap: 1rem;
+} 
+
+.card {
+  margin: 1rem;
+  padding: 1rem;
+  flex-basis: 45%;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  background: -webkit-linear-gradient(left, rgb(133, 48, 85), rgba(228, 164, 85), rgba(255, 246, 139), rgba(130, 182, 106), rgba(121, 116, 169));
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-color: transparent;
+  border: .01em solid rgba(255, 255, 255, 0.171);
+  border-radius: 10px;
+  transition: color 0.15s ease, border-color 0.15s ease;
+} 
+
+/* .cardImg {
+  display: block;
+  position: relative;
+  z-index: 100;
+}
+
+.card-body {
+  display: block;
+  z-index: 100;
+} */
+
+.card:hover {
+  background: none;
+  -webkit-background-clip: none;
+  background-clip: none;
+  -webkit-text-fill-color: black;
+  background-color: rgba(219, 239, 255, 0.377);
+  text-decoration: none;
+}
+
+.card:hover a {
+  background: none;
+  -webkit-background-clip: none;
+  background-clip: none;
+  -webkit-text-fill-color: black;
+  text-decoration: none;
+}
+
+a .card:hover {
+  color: white;
+  background: -webkit-linear-gradient(left, rgba(228, 164, 85), rgba(255, 246, 139), rgba(130, 182, 106));
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+ opacity: .7;
+}
+
+.nav-item a {
+  text-decoration: none;
+  color: rgb(228, 164, 85);
+}
+
+.card:hover a  {
+  text-decoration: none;
+  color: black;
+  background: none;
+  -webkit-background-clip: none;
+  background-clip: none;
+  -webkit-text-fill-color: black;
+  opacity: .5;
+}
+
+.message {
+  margin-top: 1rem;
+}
+
+.form {
+  border: .01em solid rgba(255, 255, 255, 0.267);
+  margin-bottom: 1rem;
+}
+
+.form:hover {
+  border: .01em solid rgba(255, 255, 255, 0.555);
+}
+
+.giant {
+  font-size: 8rem;
+  font-family: zipline-lined, serif;
+  text-align: center;
+}
+
+footer {
+  height: 100px;
+  border-top: 1px solid #eaeaea;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.socialIcon {
+  width: 40px;
+  margin: .5rem;
+  float: right;
+  margin-top: -2rem;
+}
+
+@media screen and (max-width: 450px) {
+  .card {width: 10rem;}
+  .giant {font-size: 4rem;}
+  .socialIcon {width: 30px; margin: .7rem;}
+}
+
+/* STYLES FOR CAT GAME
+
+#lefty {
+  background: rgba(230, 230, 250, 0.38);
+}
+
+#rightSide {
+  left: 500px;
+  border-left-width: 10px;
+  border-left-style: solid;
+  border-image: linear-gradient(to bottom, #c4e17f, #f7fdca, #fad071, #f0766b, #db9dbe, #c49cdf, #6599e2, #61c2e4);
+  border-image-slice: 1;
+  background: rgba(230, 230, 250, 0.38);
+}
+
+#gameOver1 {
+  position: absolute;
+  top: 175px;
+  left: 220px;
+  font-size: 100px;
+  background: -webkit-linear-gradient( rgb(73, 247, 73), rgb(245, 245, 94), orange, rgb(248, 48, 125), rgb(189, 13, 189), rgb(17, 17, 105));
+  -webkit-background-clip: text;
+          background-clip: text;
+  -webkit-text-fill-color: transparent;
+  z-index: 100;   
+}
+
+#gameOver2 {
+  position: absolute;
+  top: 171px;
+  left: 223px;
+  font-size: 100px;
+  color: transparent;
+  text-shadow: 4px 4px 4px rgba(7, 7, 58, 0.822);
+  z-index: 99;
+}
+
+#restart {
+  position: absolute;
+  top: 380px;
+  left: 443px;
+  margin-right: auto;
+} */
+
+/* OLD MEDIA SCREENS
+
+@media screen and (max-width: 600px) {  
+  .heading {font-size: 2.75rem;}
+  h1, h3 {font-size: large;}
+  .btn {font-size: 1rem;}
+  .left {left: 3px;}
+  .right {right: 3px;}
+  .bottom {width: 100%;}
+}
+
+@media screen and (max-width: 992px) {
+  .heading {font-size: 2.75rem;}
+  .stack {flex: 100%; max-width: 100%;}
+  .oneword {width: 90%; height: auto;}
+  h1 {font-size: x-large;}
+  .btn {font-size: 2rem;}
+  .left {left: 15%;}
+  .right {right: 15%;}
+  .bottom {width: 75%;}
+}
+
+@media screen and (min-width: 992px) {
+  h1 {font-size: xx-large;}
+  .heading {font-size: 2.75rem;}
+.gallery, .gallery1 {height: 300px;}
+} */
+
+/* OLD CODE
+
+.b {
+  padding: 1.5rem;
+}
+
+.col {
+justify-content: center;
+display: flex;
+
+
+.titles {
+  margin-top: 10%;
+}
+
+.left {
+  left: 25%;
+}
+
+.right {
+  right: 25%;
+}
+
+.bottom {
+  position: absolute;
+  bottom: 0;
+  width: 90%;
+}
+
+.grid, .grid1 {
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+
+.heading {
+  padding-bottom: 20px;
+  font-size: 1.75rem;
+}
+
+.smallBtn {
+font-size: 2rem;
+}
+
+
+.gallery, .gallery1 {
+  height: 400px;
+  padding-bottom: 30px;
+  align-content: center;
+  float: none;
+  margin: 0 auto;
+}
+} */
+
+/* TEMPLATE STYLES
+
+<style jsx>{`
+        .container {
+          min-height: 100vh;
+          padding: 0 0.5rem;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+        }
+
+        main {
+          padding: 5rem 0;
+          flex: 1;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+        }
+
+        footer {
+          width: 100%;
+          height: 100px;
+          border-top: 1px solid #eaeaea;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+
+        footer img {
+          margin-left: 0.5rem;
+        }
+
+        footer a {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+
+        a {
+          color: inherit;
+          text-decoration: none;
+        }
+
+        .title a {
+          color: #0070f3;
+          text-decoration: none;
+        }
+
+        .title a:hover,
+        .title a:focus,
+        .title a:active {
+          text-decoration: underline;
+        }
+
+        .title {
+          margin: 0;
+          line-height: 1.15;
+          font-size: 4rem;
+        }
+
+        .title,
+        .description {
+          text-align: center;
+        }
+
+        .description {
+          line-height: 1.5;
+          font-size: 1.5rem;
+        }
+
+        code {
+          background: #fafafa;
+          border-radius: 5px;
+          padding: 0.75rem;
+          font-size: 1.1rem;
+          font-family: Menlo, Monaco, Lucida Console, Liberation Mono,
+            DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace;
+        }
+
+        .grid {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-wrap: wrap;
+
+          max-width: 800px;
+          margin-top: 3rem;
+        }
+
+        .card {
+          margin: 1rem;
+          flex-basis: 45%;
+          padding: 1.5rem;
+          text-align: left;
+          color: inherit;
+          text-decoration: none;
+          border: 1px solid #eaeaea;
+          border-radius: 10px;
+          transition: color 0.15s ease, border-color 0.15s ease;
+        }
+
+        .card:hover,
+        .card:focus,
+        .card:active {
+          color: #0070f3;
+          border-color: #0070f3;
+        }
+
+        .card h3 {
+          margin: 0 0 1rem 0;
+          font-size: 1.5rem;
+        }
+
+        .card p {
+          margin: 0;
+          font-size: 1.25rem;
+          line-height: 1.5;
+        }
+
+        .logo {
+          height: 1em;
+        }
+
+        @media (max-width: 600px) {
+          .grid {
+            width: 100%;
+            flex-direction: column;
+          }
+        }
+      `}</style>
+
+      <style jsx global>{`
+        html,
+        body {
+          padding: 0;
+          margin: 0;
+          font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+            Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
+            sans-serif;
+        }
+
+        * {
+          box-sizing: border-box;
+        }
+      `}</style> */

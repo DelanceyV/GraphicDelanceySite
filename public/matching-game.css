@@ -1,0 +1,99 @@
+body {
+    background: url("./sky.jpg") no-repeat center fixed;
+    background-size: cover;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+    padding-left: 4.3rem;
+    padding-right: 11.1rem;
+}
+
+h1, p {
+    background: rgba(230, 230, 250, 0.38); 
+    border: solid purple 3px;
+    border-radius: 7px;
+    padding: 7px;
+}
+
+button:hover {
+  opacity: .7;
+}
+
+h1 {
+    color: rgb(5, 65, 65);
+    text-shadow: 2px 2px 2px rgba(161, 243, 232, 0.692);
+    font-size: 40px;
+}
+
+p {
+    font-size: 20px;
+}
+
+button {
+    background: rgba(248, 246, 222, 0.85); 
+    border: solid rgb(219, 201, 41) 3px;
+    border-radius: 7px;
+    padding: 7px;
+    color: rgb(138, 6, 6);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    position: relative;
+    left: 40px;
+    top: -5px;
+}
+
+img {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+}
+
+div {
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    border-radius: 20px;
+
+}
+
+#lefty {
+    background: rgba(230, 230, 250, 0.38);
+}
+
+#rightSide {
+    left: 570px;
+    border-left-width: 10px;
+    border-left-style: solid;
+    border-image: linear-gradient(to bottom, #c4e17f, #f7fdca, #fad071, #f0766b, #db9dbe, #c49cdf, #6599e2, #61c2e4);
+    border-image-slice: 1;
+    background: rgba(230, 230, 250, 0.38);
+}
+
+#gameOver1 {
+    position: absolute;
+    top: 175px;
+    left: 220px;
+    font-size: 100px;
+    background: -webkit-linear-gradient( rgb(73, 247, 73), rgb(245, 245, 94), orange, rgb(248, 48, 125), rgb(189, 13, 189), rgb(17, 17, 105));
+    -webkit-background-clip: text;
+            background-clip: text;
+    -webkit-text-fill-color: transparent;
+    z-index: 100;   
+}
+
+#gameOver2 {
+    position: absolute;
+    top: 171px;
+    left: 223px;
+    font-size: 100px;
+    color: transparent;
+    text-shadow: 4px 4px 4px rgba(7, 7, 58, 0.822);
+    z-index: 99;
+}
+
+#restart {
+    position: absolute;
+    top: 380px;
+    left: 443px;
+    margin-right: auto;
+}
