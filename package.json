@@ -1,5 +1,6 @@
 {
   "name": "gd-site",
+  "homepage": "https://graphicdelancey.com",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

@@ -43,14 +43,14 @@ class ReachOut extends Component {
                   type="textarea"
                   name="message"
                   id="message"
-                  placeholder="Have fun typing in RAINBOW! :)"
+                  placeholder="Hi! I'm still working on the functionality of this form. If you need to contact me please email GraphicDelancey@gmail.com. Until then, Have fun typing in RAINBOW!!"
                   className="form rainbow"
                 />
               </Col>
             </FormGroup>
             <span className="center">
             {/* onClick={emailjs.sendForm('service_ee0728l', 'template_39hhkfa', '#GDForm')} */}
-            <Button size="xxl">Send It!</Button>
+            <Button size="xxl">(don't) Send It!</Button>
             </span>
           </Form> 
           <style type="text/css">
